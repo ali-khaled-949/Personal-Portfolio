@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Advanced Portfolio Website">
+  <title>Portfolio - Home</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/particles.js" defer></script>
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#home" class="logo">
+        <img src="img/logo.png" alt="Logo" class="logo-img">
+        My Portfolio
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home" class="smooth-scroll">Home</a></li>
+        <li><a href="#about" class="smooth-scroll">About</a></li>
+        <li><a href="#skills" class="smooth-scroll">Skills</a></li>
+        <li><a href="#contact" class="smooth-scroll">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Welcome to My Portfolio</h1>
+        <p>I am a <span class="highlight">Web Developer</span> creating innovative solutions.</p>
+        <a href="#contact" class="btn smooth-scroll">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Hi! I'm a passionate developer with a knack for creating dynamic and engaging web applications. With expertise in front-end and back-end development, I bring ideas to life with modern design and functionality.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2>My Skills</h2>
+      <div class="skill-list">
+        <div class="skill">
+          <h3>HTML & CSS</h3>
+          <div class="progress-bar"><span style="width: 90%;"></span></div>
+        </div>
+        <div class="skill">
+          <h3>JavaScript</h3>
+          <div class="progress-bar"><span style="width: 85%;"></span></div>
+        </div>
+        <div class="skill">
+          <h3>React</h3>
+          <div class="progress-bar"><span style="width: 80%;"></span></div>
+        </div>
+        <div class="skill">
+          <h3>Node.js</h3>
+          <div class="progress-bar"><span style="width: 75%;"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
