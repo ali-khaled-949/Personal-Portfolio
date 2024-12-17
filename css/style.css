@@ -224,4 +224,45 @@
     padding: 1rem 0;
     background: rgba(0, 0, 0, 0.8);
   }
-  
+  /* General Button Styles (Same as Navbar Buttons) */
+.nav-button {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: 500;
+  background: linear-gradient(45deg, transparent, transparent);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  background: chocolate; /* Same base color as navbar */
+  box-shadow: 0 4px 6px rgba(1, 147, 28, 0.5);
+}
+
+/* Hover Effect */
+.nav-button:hover {
+  color: #fff;
+  background: #ff5722;
+  box-shadow: 0 0 15px rgba(255, 87, 34, 0.8);
+  transform: translateY(-2px);
+}
+
+/* Button Glow Effect */
+.nav-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, #ff5722, #e64a19, #ff5722);
+  z-index: -1;
+  filter: blur(10px);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.nav-button:hover::before {
+  opacity: 1;
+}

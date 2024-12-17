@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Advanced Portfolio Website">
+  <meta name="description" content="Advanced Responsive Portfolio Website">
   <title>Portfolio - Home</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
@@ -11,33 +11,31 @@
   <script src="https://cdn.jsdelivr.net/npm/particles.js" defer></script>
 </head>
 <body>
-  <div id="particles-js"></div>
+  <div id="particles-js"></div> 
 
   <!-- Navigation Bar -->
   <nav class="navbar">
     <div class="container">
       <a href="#home" class="logo">
-        <img src="img/logo.png" alt="Logo" class="logo-img">
-        My Portfolio
+        <img src="assets/images/myLogo.png" alt="Portfolio Logo" class="logo-img" style="width: 70px; height: 70px;">
       </a>
       <ul class="nav-links">
         <li><a href="#home" class="smooth-scroll active">Home</a></li>
         <li><a href="#about" class="smooth-scroll">About</a></li>
         <li><a href="#skills" class="smooth-scroll">Skills</a></li>
+        <li><a href="#projects" class="smooth-scroll">Projects</a></li>
         <li><a href="#contact" class="smooth-scroll">Contact</a></li>
       </ul>
-      
     </div>
   </nav>
 
   <!-- Hero Section -->
   <section id="home" class="hero">
     <div class="container">
-      <div class="hero-content">
-        <h1>Welcome to My Portfolio</h1>
-        <p>I am a <span class="highlight">Web Developer</span> creating innovative solutions.</p>
-        <a href="#contact" class="btn smooth-scroll">Get in Touch</a>
-      </div>
+      <img src="assets/images/myimage.png" alt="Ali Khaled Profile Picture" class="profile-photo" style="max-width: 50px;">
+      <h1>Welcome, I'm <span class="highlight">Ali Khaled</span></h1>
+      <p class="tagline">A Web Developer crafting innovative solutions for modern problems.</p>
+      <a href="#contact" class="btn">Get in Touch</a>
     </div>
   </section>
 
@@ -45,30 +43,55 @@
   <section id="about" class="about">
     <div class="container">
       <h2>About Me</h2>
-      <p>Hi! I'm a passionate developer with a knack for creating dynamic and engaging web applications. With expertise in front-end and back-end development, I bring ideas to life with modern design and functionality.</p>
+      <p>
+        Hi, I'm Ali Khaled, a passionate web developer with a background in Computer Science. I specialize in creating responsive, modern websites and applications.
+        My technical expertise includes <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>React</strong>, and <strong>Node.js</strong>. 
+      </p>
+      <a href="https://www.linkedin.com/in/solidsolutions/" target="_blank" class="nav-button">My LinkedIn</a>
     </div>
   </section>
 
   <!-- Skills Section -->
   <section id="skills" class="skills">
     <div class="container">
-      <h2>My Skills</h2>
-      <div class="skill-list">
-        <div class="skill">
-          <h3>HTML & CSS</h3>
-          <div class="progress-bar"><span style="width: 90%;"></span></div>
+      <h2>Skills</h2>
+      <div class="skills-wrapper">
+        <div class="skills-category">
+          <h3>Technical Skills</h3>
+          <ul>
+            <li>HTML5, CSS3, JavaScript</li>
+            <li>React, Node.js, Express</li>
+            <li>APIs, Git & GitHub</li>
+          </ul>
         </div>
-        <div class="skill">
-          <h3>JavaScript</h3>
-          <div class="progress-bar"><span style="width: 85%;"></span></div>
+        <div class="skills-category">
+          <h3>Non-Technical Skills</h3>
+          <ul>
+            <li>Problem Solving</li>
+            <li>Time Management</li>
+            <li>Communication</li>
+          </ul>
         </div>
-        <div class="skill">
-          <h3>React</h3>
-          <div class="progress-bar"><span style="width: 80%;"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-list">
+        <div class="project-item">
+          <h3>Project 1: E-Commerce Site</h3>
+          <p><strong>Technologies:</strong> React, Node.js, MongoDB</p>
+          <p>An online shopping platform with user authentication and payment integration.</p>
+          <a href="project1.html" class="btn">View Details</a>
         </div>
-        <div class="skill">
-          <h3>Node.js</h3>
-          <div class="progress-bar"><span style="width: 75%;"></span></div>
+        <div class="project-item">
+          <h3>Project 2: Portfolio Website</h3>
+          <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+          <p>A fully responsive portfolio website to showcase skills and projects.</p>
+          <a href="project2.html" class="btn">View Details</a>
         </div>
       </div>
     </div>
@@ -78,7 +101,7 @@
   <section id="contact" class="contact">
     <div class="container">
       <h2>Contact Me</h2>
-      <form id="contact-form">
+      <form action="contact.php" method="POST" id="contact-form">
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
         <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
@@ -90,7 +113,7 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
+      <p>&copy; 2024 Ali Khaled. All Rights Reserved.</p>
     </div>
   </footer>
 
